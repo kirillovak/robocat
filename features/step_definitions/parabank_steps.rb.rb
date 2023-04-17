@@ -11,3 +11,11 @@ Then(/^I should see this content "([^"]*)"$/) do |content|
   page.has_content? @content
 end
 
+Then(/^I click link "([^"]*)"$/) do |link|
+  @link = link
+  page.click_link @link
+end
+
+And(/^I set a breakpoint$/) do
+  pry
+end
