@@ -12,4 +12,5 @@ Feature: Visit ParaBank and Test Webpage
     Given I visit the following "https://parabank.parasoft.com/parabank/index.htm" and page loaded
     Then I should see this content "Customer Login"
     Then I click link "Read More"
+    Then I click button "button"
     And I set a breakpoint

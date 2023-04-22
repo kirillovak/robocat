@@ -19,3 +19,8 @@ end
 And(/^I set a breakpoint$/) do
   pry
 end
+
+Then(/^I click button "([^"]*)"$/) do |button|
+  @button = button
+  page.click_button @button
+end
